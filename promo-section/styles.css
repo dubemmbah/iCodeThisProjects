@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #02060a;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  height: 60%;
+  width: 50rem;
+  background-color: rgba(125, 135, 155, 0.25);
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  box-shadow: 0 1rem 2rem 1rem rgba(255, 255, 255, 0.05),
+    0 1rem 2rem 1rem rgba(255, 255, 255, 0.05);
+}
+
+.container > * {
+  margin: 2rem 0;
+  animation: mainEl 0.8s forwards, mainElReveal 0.5s forwards 0.8s;
+}
+
+section {
+  animation: sectionReveal 0.6s forwards 1.6s;
+}
+
+h2,
+section > p {
+  animation: textReveal 0.5s forwards 1.6s;
+}
+
+.rocket-box {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 2rem auto;
+  cursor: grab;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rocket {
+  color: #02060a;
+  width: 5rem;
+  height: 5rem;
+  transition: all 1s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.rocket-box:hover {
+  border: 1px solid #7dd3fc;
+}
+
+.rocket-box:hover .rocket {
+  transform: scale(1.5) translate(1rem, -1rem) rotate(720deg);
+  color: rgba(125, 212, 252, 0.91);
+}
+
+.heading-2 {
+  margin: 2rem 0;
+}
+
+.text {
+  font-weight: 300;
+  width: 26rem;
+  margin: 0 auto 1rem;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  position: relative;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(0.25rem) scale(1.05);
+}
+
+.btn:before {
+  content: "Let's go";
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  padding-top: 1rem;
+  background-color: #fff;
+  border-radius: 100px;
+  transition: all 0.1s ease-in;
+}
+
+.btn:hover::before {
+  transform: translateY(20%);
+  opacity: 1;
+  box-shadow: 0 1rem 2rem 2rem rgba(255, 255, 255, 0.05),
+    0 2rem 2rem 1rem rgba(2, 6, 10, 0.566);
+}
+
+section > div {
+  animation: sectionDivReveal 0.5s forwards 1.6s;
+}
+
+.special_promo {
+  background-color: rgba(2, 6, 10, 0.566);
+  width: 75%;
+  margin: 1rem auto 0;
+  padding: 2rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.special_promo-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.special_promo-text {
+  font-size: 1.2rem;
+}
+
+@keyframes mainEl {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mainElReveal {
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes sectionReveal {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textReveal {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes sectionDivReveal {
+  100% {
+    transform: translateY(0);
+  }
+}
