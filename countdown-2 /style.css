@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;200;400;600;700&display=swap);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(5, 46, 22, 0.707) 50%,
+      rgba(20, 83, 45, 0.716)
+    ),
+    url(https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D);
+  background-size: cover;
+  font-family: "Noto Serif", serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  padding: 8rem;
+}
+
+main {
+  color: #fff;
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.heading {
+  font-size: 6.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.date {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.countdown-container {
+  margin: 5rem 0;
+  text-align: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countdown-el {
+  min-width: 15rem;
+}
+
+.days > p {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.seconds > p {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.countdown-container p {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1rem 2rem 1rem rgba(122, 187, 146, 0.3);
+  padding: 4.2rem;
+  font-size: 7rem;
+  font-weight: bolder;
+}
+
+.countdown-container span {
+  font-size: 2.6rem;
+  opacity: 0.7;
+}
+
+.text {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 56.25em) {
+  main {
+    text-align: center;
+  }
+
+  .countdown-container {
+    flex-direction: column;
+  }
+
+  .days p,
+  .seconds p {
+    border-radius: 0;
+  }
+
+  .text {
+    text-align: justify;
+  }
+}
