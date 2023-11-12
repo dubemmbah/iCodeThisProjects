@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --bdy-bg: radial-gradient(ellipse at center, #ec4899 1%, #1e40af 80%);
+  --bg-container: #fff;
+  --section-header-bg: rgba(0, 0, 0, 0.2);
+  --item-bg: rgba(219, 219, 219, 0.1);
+  --btn-add-bg: linear-gradient(90deg, #6b21a8 50%, #c026d3);
+  --text-clr: rgba(255, 255, 255, 0.7);
+  --container-bg-clr: rgba(39, 39, 42, 0.2);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bdy-bg);
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  padding: 6rem 12rem;
+}
+
+img {
+  width: 8rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  background: var(--bg-container);
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.wishlist-header {
+  background: var(--section-header-bg);
+  height: 12.5%;
+  padding: 3rem 3rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+}
+
+.title {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.date {
+  font-size: 1.4rem;
+}
+
+.btn-send {
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.5rem;
+  color: #3b82f6;
+  cursor: pointer;
+}
+
+.feed {
+  padding: 1.5rem 2rem;
+}
+
+.item {
+  background: var(--item-bg);
+  padding: 4rem 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.item-details {
+}
+
+.item-name {
+  margin-bottom: 0.5rem;
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.item-description {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.actions {
+  margin-top: 1rem;
+}
+
+.item-price {
+  margin-bottom: 1rem;
+  margin-left: 8.5rem;
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-add {
+  background: var(--btn-add-bg);
+  font-size: 1.5rem;
+  color: #fff;
+  width: 18rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.icon-cart {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
