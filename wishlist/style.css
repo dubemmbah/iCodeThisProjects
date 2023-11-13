@@ -140,3 +140,10 @@ img {
   height: 2.4rem;
   cursor: pointer;
 }
+
+.info {
+  text-align: center;
+  padding: 4rem 0;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
