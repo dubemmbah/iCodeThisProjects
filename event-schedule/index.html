@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Event Schedule</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <div class="actions">
+          <ion-icon class="icon-back" name="arrow-back-sharp"></ion-icon>
+          <ion-icon class="icon-notify" name="notifications-outline"></ion-icon>
+        </div>
+        <div class="user-info">
+          <div class="img-box">
+            <img
+              src="https://www.iheartradio.ca/image/policy:1.20085448:1691176304/katy.png?f=default&$p$f=d3685ce"
+              alt="Katy Perry"
+            />
+          </div>
+          <div class="user-details">
+            <p class="user-name">Katy Perry</p>
+            <p class="title">Event Schedule</p>
+          </div>
+        </div>
+        <div class="">
+          <button class="month month-active">November</button>
+          <button class="month">December</button>
+        </div>
+      </section>
+      <section class="feed">
+        <ul class="event-list">
+          <li class="event event--1">
+            <div class="navigator"></div>
+            <div class="event-details">
+              <p class="event-date">Nov 26</p>
+              <p class="event-location">Denver, CO, US</p>
+              <div class="event-nav">
+                <p class="event-center">
+                  <ion-icon class="icon-location" name="location"></ion-icon
+                  >Pepsi Center
+                </p>
+                <p class="event-time">
+                  <ion-icon class="icon-time" name="time"></ion-icon>20:00
+                </p>
+              </div>
+            </div>
+            <button class="btn-purchase">
+              <ion-icon class="icon-purchase" name="ticket"></ion-icon>
+              <p>Buy Ticket</p>
+            </button>
+          </li>
+          <li class="event event--2">
+            <div class="navigator"></div>
+            <div class="event-details">
+              <p class="event-date">Nov 28</p>
+              <p class="event-location">Omaha, NE, US</p>
+              <div class="event-nav">
+                <p class="event-center">
+                  <ion-icon class="icon-location" name="location"></ion-icon>BOK
+                  Center
+                </p>
+                <p class="event-time">
+                  <ion-icon class="icon-time" name="time"></ion-icon>20:20
+                </p>
+              </div>
+            </div>
+            <button class="btn-purchase sold-out">
+              <ion-icon class="icon-purchase" name="ticket"></ion-icon>
+              <p>Sold Out</p>
+            </button>
+          </li>
+          <li class="event event--3">
+            <div class="navigator"></div>
+            <div class="event-details">
+              <p class="event-date">Nov 29</p>
+              <p class="event-location">Tulsa, OK, US</p>
+              <div class="event-nav">
+                <p class="event-center">
+                  <ion-icon class="icon-location" name="location"></ion-icon
+                  >Century Center
+                </p>
+                <p class="event-time">
+                  <ion-icon class="icon-time" name="time"></ion-icon>21:00
+                </p>
+              </div>
+            </div>
+            <button class="btn-purchase">
+              <ion-icon class="icon-purchase" name="ticket"></ion-icon>
+              <p>Buy Ticket</p>
+            </button>
+          </li>
+          <li class="event event--4">
+            <div class="navigator"></div>
+            <div class="event-details">
+              <p class="event-date">Nov 30</p>
+              <p class="event-location">St. Paul, MN, US</p>
+              <div class="event-nav">
+                <p class="event-center">
+                  <ion-icon class="icon-location" name="location"></ion-icon
+                  >Xcel Center
+                </p>
+                <p class="event-time">
+                  <ion-icon class="icon-time" name="time"></ion-icon>21:40
+                </p>
+              </div>
+            </div>
+            <button class="btn-purchase">
+              <ion-icon class="icon-purchase" name="ticket"></ion-icon>
+              <p>Buy Ticket</p>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
