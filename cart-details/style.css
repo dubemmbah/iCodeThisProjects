@@ -4,9 +4,7 @@
   --bdy-bg: #67e8f927;
   --container-bg: #fff;
   --container-before: #0c4a6e;
-  --btn-checkout-bg: #339af0;
-  --text-clr: rgba(255, 255, 255, 0.7);
-  --container-bg-clr: rgba(39, 39, 42, 0.2);
+  --btn-checkout-bg: #1c7ed6;
 }
 
 *,
@@ -37,6 +35,20 @@ body {
   padding: 4rem;
   width: 35rem;
   border-radius: 3rem;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #1970c223;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-12.5%, -10%);
+  border-radius: 3rem;
+  z-index: -1;
 }
 
 .title {
@@ -54,12 +66,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   column-gap: 2rem;
+  justify-items: start;
+  align-items: start;
 }
 
 img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  aspect-ratio: 1;
 }
 
 .item-name {
@@ -71,7 +85,7 @@ img {
 .btn-stock {
   display: inline-block;
   border: none;
-  background: #38d9a9;
+  background: #84cc16;
   border-radius: 100px;
   color: white;
   padding: 0.25rem 1rem;
@@ -81,12 +95,55 @@ img {
 }
 
 .qty-container {
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 1rem;
   grid-column: 2 / 3;
 }
 
+.btn-decrement,
+.btn-increment {
+  border: none;
+  border-radius: 5px;
+  background: #93c4fd59;
+  padding: 0.25rem;
+  width: 3rem;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-decrement:hover,
+.btn-decrement:active,
+.btn-increment:hover,
+.btn-increment:active {
+  background: #93c4fd74;
+}
+
+.quantity {
+  width: 3rem;
+  padding: 0.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000;
+  font-size: 1.2rem;
+  font-family: inherit;
+  text-align: center;
+  appearance: none;
+}
+
+.quantity:focus {
+  outline: none;
+}
+
+.quantity::-webkit-inner-spin-button,
+.quantity::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .upper {
-  border-bottom: 1px solid #888;
+  border-bottom: 2px solid #ddd;
 }
 
 .lower {
@@ -108,12 +165,16 @@ img {
   font-size: 1.2rem;
 }
 
+.nok > p {
+  font-weight: 600;
+}
+
 a {
   font-size: 1rem;
 }
 
 .btn-checkout {
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: block;
   width: 100%;
   padding: 1.25rem;
@@ -121,4 +182,12 @@ a {
   background: var(--btn-checkout-bg);
   border-radius: 100px;
   color: #fff;
+  font-size: 1.35rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-checkout:hover {
+  background: #1971c2;
+  transform: translateY(-0.1rem) scale(1.01);
 }
