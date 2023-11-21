@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --bdy-bg: #3c3c3c;
+  --primary-clr-one: #a21caf;
+  --primary-clr-two: #db2777;
+  --primary-clr-three: #8b5cf6;
+  --text-clr: #fff;
+  --clr-btn: #ddd;
+  --clr-btn-border: #aaaaaacb;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bdy-bg);
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 8rem 0;
+}
+
+.card-container {
+  background: transparent;
+  /* height: 55rem; */
+  color: var(--text-clr);
+
+  display: flex;
+  gap: 0rem;
+}
+
+.card {
+  width: 35rem;
+  height: 55rem;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+}
+
+.card--1 {
+  background: var(--primary-clr-one);
+  margin-right: -10rem;
+  transform: translateY(-2rem);
+}
+
+.card--2 {
+  background: var(--primary-clr-two);
+
+  transform: translateY(4rem);
+  z-index: 3;
+}
+
+.card--3 {
+  background: var(--primary-clr-three);
+  margin-left: -10rem;
+}
+
+.upper {
+  padding: 6rem 4rem;
+  height: 70%;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+.btn-skip {
+  position: absolute;
+  bottom: 15%;
+  left: 7.5%;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--clr-btn-border);
+  font-size: 1.5rem;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--clr-btn);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.lower {
+  background: rgb(38, 38, 38);
+  height: 30%;
+  width: 100%;
+  position: relative;
+}
+
+.icon {
+  width: 12.5rem;
+  height: 12.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.wave {
+  display: block;
+  position: absolute;
+  top: -44%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.dots {
+  position: absolute;
+  width: 8rem;
+  height: 4rem;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: #fff; */
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots__dot {
+  background: #222;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.card--1 .dots__dot.active {
+  background: var(--primary-clr-one);
+}
+
+.card--2 .dots__dot.active {
+  background: var(--primary-clr-two);
+}
+
+.card--3 .dots__dot.active {
+  background: var(--primary-clr-three);
+}
