@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --bdy-bg: #1c1917;
+  --card-bg: #eee;
+  --color-primary: #fcc419;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bdy-bg);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  width: 30rem;
+  margin: 20rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container > .profile {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+
+.container > .profile button {
+  cursor: pointer;
+}
+
+.user-profile {
+  display: flex;
+  justify-self: flex-end;
+  border: none;
+  padding: 2rem;
+  font-size: 2.4rem;
+  background: transparent;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  color: yellow;
+}
+.user-info > .user-name {
+  font-size: 2rem;
+}
+
+.user-info > .btn-change {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 3rem;
+  transform: translateX(200%);
+  transition: transform 1s ease-in-out;
+}
+
+.card.active {
+  transform: translateX(0);
+}
+
+.card > .user-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-upgrade {
+  margin: 3rem 0;
+  width: 100%;
+  padding: 1.25rem;
+  background: var(--color-primary);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.btn-upgrade:hover {
+  background: white;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.actions > button,
+.btn-logout {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: #222;
+  cursor: pointer;
+}
+
+.divide {
+  height: 2px;
+  width: 100%;
+  background-color: #e5e5e5;
+  margin: 2rem 0;
+}
