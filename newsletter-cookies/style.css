@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --bdy-bg: #eee;
+  --text-clr: rgba(255, 255, 255, 0.7);
+  --container-bg-clr: rgba(39, 39, 42, 0.2);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bdy-bg);
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.cookie {
+  position: fixed;
+  bottom: 2.5%;
+  right: 2.5%;
+  width: 40rem;
+  background: #171717;
+  color: #ddd;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1.5rem;
+  align-items: start;
+
+  align-content: center;
+  justify-content: center;
+}
+
+.cookie img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+}
+
+.cookie .info {
+  font-size: 1.35rem;
+}
+
+.cookie .info a {
+  text-decoration: none;
+  color: #92400e;
+}
+
+.cookie .info a:hover {
+  text-decoration: underline;
+}
+
+.cookie .actions {
+  margin-top: 0.5rem;
+  grid-column: 2 / 3;
+}
+
+.cookie .actions .btn {
+  border: none;
+  background: #0a0a0a;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+
+.btn-disagree {
+  margin-right: 1rem;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  width: 60rem;
+  background: white;
+  padding: 4rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 4rem;
+}
