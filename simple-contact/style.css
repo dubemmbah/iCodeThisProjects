@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --bdy-bg: #f6f5f9;
+  --color-primary-light: #e5dbff91;
+  --color-primary-dark: #9675fa;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bdy-bg);
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.toast {
+  position: absolute;
+  top: 0;
+  width: 35rem;
+  background: rgba(255, 255, 255, 0.6);
+  color: #9a81e4;
+  padding: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 10;
+  transform: translateY(-120%);
+}
+
+.animate-toast {
+  animation: animateToast 4s ease-in-out;
+}
+
+.toast img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.card {
+  width: 32rem;
+  background: #fff;
+  border-radius: 8px;
+  padding: 6rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 3rem 5rem -2rem rgba(0, 0, 0, 0.05);
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  background: var(--color-primary-light);
+  z-index: -1;
+}
+
+.card::before {
+  border-radius: 8px;
+  width: 15rem;
+  height: 15rem;
+  top: -15%;
+  left: -25%;
+}
+
+.card::after {
+  width: 7.5rem;
+  height: 7.5rem;
+  bottom: -10%;
+  right: -8%;
+}
+
+.card:hover::before,
+.card:hover::after {
+  animation: animatePseudo 1.75s ease infinite;
+}
+
+.card > img {
+  width: 7.5rem;
+  height: 7.5rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.card .title {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.25px;
+}
+
+.card .info {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  width: 60%;
+  padding: 1rem 2rem;
+  border: none;
+  background: var(--color-primary-dark);
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  background: white;
+  border: 2px solid var(--color-primary-dark);
+  color: var(--color-primary-dark);
+}
+
+@keyframes animatePseudo {
+  0% {
+    transform: scale(0.9) rotate(0deg);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(0.5) rotate(180deg);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes animateToast {
+  0% {
+    transform: translateY(-120%);
+  }
+
+  20% {
+    transform: translateY(0);
+  }
+
+  90% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-120%);
+  }
+}
