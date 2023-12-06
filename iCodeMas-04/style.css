@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: #a5a5a5;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  padding: 6rem 12rem;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  height: 100%;
+  background: url(https://media.istockphoto.com/id/1651061878/photo/christmas-ornament-frame.webp?b=1&s=170667a&w=0&k=20&c=XL65n8BAt-LpE-I4h55M1-htGeudaYTxkdvREX0MAfw=)
+    no-repeat center/cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  margin: 0 auto 2rem;
+  width: 65%;
+  background: linear-gradient(to bottom, #a2c580, #7daa4a, #5c8232);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 4.2rem;
+}
+
+.info {
+  color: white;
+  width: 60%;
+  margin: 0 auto 4rem;
+}
+
+.btn {
+  border: none;
+  background: #7daa4a;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 100rem;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-0.2rem) scale(1.02);
+}
