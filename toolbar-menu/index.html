@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js" defer></script>
+    <title>Toolbar Menu</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation__group">
+        <button type="button">
+          <ion-icon class="icon" name="menu"></ion-icon>
+        </button>
+        <button type="button">
+          <ion-icon class="icon" name="settings-outline"></ion-icon>
+        </button>
+        <button type="button">
+          <ion-icon class="icon apps__button" name="grid-outline"></ion-icon>
+        </button>
+        <div class="apps__button--wrapper">
+          <!-- <button type="button"></button> -->
+          <div class="dropdown__wrapper hide dropdown__wrapper--fade-in none">
+            <h3>App Integrations</h3>
+            <div class="apps-container">
+              <button class="app">
+                <ion-icon class="icon" name="logo-amazon"></ion-icon>
+              </button>
+              <button class="app">
+                <ion-icon class="icon" name="logo-amazon"></ion-icon>
+              </button>
+              <button class="app">
+                <ion-icon class="icon" name="logo-linkedin"></ion-icon>
+              </button>
+              <button class="app">
+                <ion-icon class="icon" name="logo-octocat"></ion-icon>
+              </button>
+              <button class="app">
+                <ion-icon class="icon" name="logo-whatsapp"></ion-icon>
+              </button>
+              <button class="app">
+                <ion-icon class="icon" name="logo-youtube"></ion-icon>
+              </button>
+              <button class="app">
+                <ion-icon class="icon" name="logo-snapchat"></ion-icon>
+              </button>
+              <button class="app">
+                <ion-icon class="icon" name="logo-github"></ion-icon>
+              </button>
+              <button class="app">
+                <ion-icon class="icon" name="logo-apple"></ion-icon>
+              </button>
+              <!-- More app integrations -->
+            </div>
+          </div>
+        </div>
+        <button type="button">
+          <img
+            class="profile"
+            src="https://img.freepik.com/free-photo/black-man-posing_23-2148171615.jpg?size=626&ext=jpg&ga=GA1.1.1877106984.1699472407&semt=ais"
+            alt="Profile picture"
+          />
+        </button>
+      </nav>
+    </header>
+  </body>
+</html>
