@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --background: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  padding: 10rem 20rem;
+}
+
+.container {
+  width: 70rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem 1.5rem;
+  justify-items: center;
+  align-items: center;
+  place-content: center;
+}
+
+.item {
+  width: 15rem;
+  height: 20rem;
+  /* background: #000; */
+  /* color: white; */
+}
+
+.item-1 {
+  position: relative;
+}
+
+.item-1::before {
+  content: "NEW";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1864ab;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  width: 22.5%;
+  padding: 0.3rem;
+  z-index: 1;
+}
+
+.img-box {
+  height: 15rem;
+  background-color: #f8fafc;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.img-box .cart-message {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #1864ab;
+  color: white;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  transform: translateY(3rem);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-box .cart-message .icon-cart {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.img-box:hover .cart-message {
+  transform: translateY(0);
+}
+
+.item-name {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+.item-price {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.item-price span {
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: #a5a5a5;
+  text-decoration: line-through;
+}
