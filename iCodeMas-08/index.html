@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js" defer></script>
+    <title>iCodeMas - 05</title>
+  </head>
+  <body>
+    <nav class="container">
+      <div class="top">
+        <p>Use code <span>"XMAS"</span> for a 20% discount at checkout</p>
+        <button class="btn-close">
+          <ion-icon class="icon-close" name="close-sharp"></ion-icon>
+        </button>
+      </div>
+      <div class="actions">
+        <h3 class="logo">iCodeMas</h3>
+        <div class="search-bar">
+          <ion-icon class="icon-search" name="search-sharp"></ion-icon>
+          <input type="search" id="search" placeholder="Search" />
+        </div>
+        <ul>
+          <li><a href="#">Featured</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <button class="btn-cart">
+          <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+          <span class="item-number">3</span>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <div class="products"></div>
+      <aside class="checkout">
+        <h4 class="title">Your cart</h4>
+        <section class="cart">
+          <div class="items">
+            <div class="item item-1">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/977/977710.png?ga=GA1.1.107811200.1701925464&semt=ais"
+                alt="Gingerbread man cookie"
+              />
+              <div class="item-details">
+                <p class="item-name">Gingerbread Man Cookie</p>
+                <p class="item-price">$12.99</p>
+                <div class="item-amount">
+                  <button class="btn-decrement">-</button>
+                  <span>2</span>
+                  <button class="btn-increment">+</button>
+                </div>
+              </div>
+              <div class="line"></div>
+            </div>
+            <div class="item item-2">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/2275/2275829.png?ga=GA1.1.107811200.1701925464&semt=ais"
+                alt="Gingerbread man cookie"
+              />
+              <div class="item-details">
+                <p class="item-name">Christmas Tree Decoration</p>
+                <p class="item-price">$19.99</p>
+                <div class="item-amount">
+                  <button class="btn-decrement">-</button>
+                  <span>1</span>
+                  <button class="btn-increment">+</button>
+                </div>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="total">
+            <div class="subtotal">
+              <h4 class="total-heading">Subtotal</h4>
+              <p class="total-value">$38.98</p>
+            </div>
+            <button class="btn-proceed">
+              Proceed to checkout
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </section>
+      </aside>
+    </main>
+  </body>
+</html>

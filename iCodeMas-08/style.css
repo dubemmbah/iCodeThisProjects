@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --background: #2c2c2c;
+  --primary-item: #3b3e40;
+  --background-item: #efefef;
+  --gray: #d5d4d5;
+  --item-non-hover: #92969a;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  height: 100vh;
+  color: var(--item-non-hover);
+}
+
+.container {
+  background: var(--background-item);
+  min-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: var(--gray);
+  color: var(--primary-item);
+  font-size: 1.15rem;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.top > p > span {
+  font-weight: bold;
+}
+
+.btn-close {
+  position: absolute;
+  top: 55%;
+  right: 2.5%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-close {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-item);
+}
+
+.actions {
+  padding: 1.5rem 3rem;
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions .logo {
+  color: var(--primary-item);
+  font-size: 2.4rem;
+  user-select: none;
+}
+
+.search-bar {
+  margin-right: auto;
+  position: relative;
+}
+
+.search-bar #search {
+  width: 30rem;
+  border: none;
+  padding: 1.5rem 4rem;
+  border-radius: 100rem;
+  font-size: 1.6rem;
+  color: var(--primary-item);
+}
+
+.search-bar #search::placeholder {
+  color: var(--item-non-hover);
+}
+
+.icon-search {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  color: var(--item-non-hover);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.search-bar #search:focus,
+.search-bar #search:active {
+  outline: 2px solid var(--item-non-hover);
+}
+
+.actions ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.actions > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.actions > ul > li:hover > a {
+  color: var(--primary-item);
+  font-weight: 700;
+}
+
+.btn-cart {
+  cursor: pointer;
+  border: none;
+  background: none;
+  position: relative;
+}
+
+.icon-cart {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-item);
+}
+
+.item-number {
+  position: absolute;
+  top: -30%;
+  right: -40%;
+  background-color: red;
+  font-size: 1.15rem;
+  color: white;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* MAIN */
+main {
+  background: #444;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr 30rem;
+}
+
+.checkout {
+  padding: 2rem;
+  background: white;
+  color: #222;
+}
+
+.checkout h4 {
+  margin-bottom: 1rem;
+}
+
+.cart {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.item img {
+  background-color: #f1f5f9;
+  width: 5rem;
+  height: 5rem;
+}
+
+.item-name {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.item-price {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.item-amount {
+  /* background-color: brown; */
+}
+
+.btn-decrement,
+.btn-increment {
+  width: 2rem;
+  background: transparent;
+  border: 1px solid #b5b5b5;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.item-amount span {
+  display: inline-block;
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+.line {
+  grid-column: 1 / -1;
+  margin-top: 2rem;
+  border: 1px solid #f5f5f5;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.subtotal::before,
+.subtotal::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 1px solid #f5f5f5;
+}
+
+.subtotal::before {
+  top: -50%;
+}
+
+.subtotal::after {
+  top: 115%;
+}
+
+.btn-proceed {
+  cursor: pointer;
+  background-color: var(--primary-item);
+  color: var(--background-item);
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  border-radius: 100rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-proceed:hover {
+  transform: scale(1.01) translateY(-0.1rem);
+}
