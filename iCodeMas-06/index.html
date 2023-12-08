@@ -16,193 +16,282 @@
     <title>iCodeMas-06</title>
   </head>
   <body>
-    <main class="container">
+    <aside class="filters">
+      <h3 class="heading">Filters</h3>
+      <!-- Categories -->
+      <div class="filters_div">
+        <section class="category">
+          <h4 class="title">Category</h4>
+          <label for="category1">
+            <input
+              type="checkbox"
+              name="cookies"
+              id="category1"
+              value="cookies"
+            />
+            Cookies
+          </label>
+          <label for="category2">
+            <input
+              type="checkbox"
+              name="candies"
+              id="category2"
+              value="candies"
+            />
+            Candies
+          </label>
+          <label for="category3">
+            <input
+              type="checkbox"
+              name="ornaments"
+              id="category3"
+              value="ornaments"
+            />
+            Ornaments
+          </label>
+          <label for="category4">
+            <input
+              type="checkbox"
+              name="accessories"
+              id="category4"
+              value="accessories"
+              checked
+            />
+            Accessories
+          </label>
+        </section>
+
+        <!-- Colors -->
+        <section class="colors">
+          <h4 class="title">Colors</h4>
+          <label for="color1">
+            <input type="checkbox" name="color" id="color1" value="red" />
+            Red
+          </label>
+          <label for="color2">
+            <input type="checkbox" name="color" id="color2" value="white" />
+            White
+          </label>
+          <label for="color3">
+            <input type="checkbox" name="color" id="color3" value="green" />
+            Green
+          </label>
+          <label for="color4">
+            <input type="checkbox" name="color" id="color4" value="brown" />
+            Brown
+          </label>
+        </section>
+
+        <!-- Size -->
+        <section class="size">
+          <h4 class="size">Size</h4>
+          <label for="size1">
+            <input type="checkbox" name="size" id="size1" value="small" />
+            Small
+          </label>
+          <label for="size2">
+            <input type="checkbox" name="size" id="size2" value="medium" />
+            Medium
+          </label>
+          <label for="size3">
+            <input type="checkbox" name="size" id="size3" value="large" />
+            Large
+          </label>
+        </section>
+      </div>
+      <button class="btn_clear-filters">Clear Filters</button>
+    </aside>
+
+    <main class="">
+      <h2 class="title">All Products</h2>
       <!-- Item 1 -->
-      <div class="item item-1">
-        <div class="img-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/6280/6280402.png?ga=GA1.1.1877106984.1699472407&semt=ais"
-            alt="Christmas tree"
-          />
-          <div class="cart-message">
-            Add to cart
-            <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+      <div class="products_list">
+        <div class="item item-1">
+          <div class="img-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/6280/6280402.png?ga=GA1.1.1877106984.1699472407&semt=ais"
+              alt="Christmas tree"
+            />
+            <div class="cart-message">
+              Add to cart
+              <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+            </div>
           </div>
+          <p class="item-name">Christmas tree decoration</p>
+          <p class="item-price">$19.99</p>
         </div>
-        <p class="item-name">Christmas tree decoration</p>
-        <p class="item-price">$19.99</p>
-      </div>
 
-      <!-- Item 2 -->
-      <div class="item item-2">
-        <div class="img-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/2374/2374820.png?ga=GA1.1.107811200.1701925464&semt=ais"
-            alt="Gift box"
-          />
-          <div class="cart-message">
-            Add to cart
-            <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+        <!-- Item 2 -->
+        <div class="item item-2">
+          <div class="img-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2374/2374820.png?ga=GA1.1.107811200.1701925464&semt=ais"
+              alt="Gift box"
+            />
+            <div class="cart-message">
+              Add to cart
+              <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+            </div>
           </div>
+          <p class="item-name">Gift box</p>
+          <p class="item-price">$19.99 <span>$12.99</span></p>
         </div>
-        <p class="item-name">Gift box</p>
-        <p class="item-price">$19.99 <span>$12.99</span></p>
-      </div>
 
-      <!-- Item 3 -->
-      <div class="item item-3">
-        <div class="img-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/977/977710.png?ga=GA1.1.107811200.1701925464&semt=ais"
-            alt="Gingerbread man cookie"
-          />
-          <div class="cart-message">
-            Add to cart
-            <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+        <!-- Item 3 -->
+        <div class="item item-3">
+          <div class="img-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/977/977710.png?ga=GA1.1.107811200.1701925464&semt=ais"
+              alt="Gingerbread man cookie"
+            />
+            <div class="cart-message">
+              Add to cart
+              <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+            </div>
           </div>
+          <p class="item-name">Gingerbread man cookie</p>
+          <p class="item-price">$12.99</p>
         </div>
-        <p class="item-name">Gingerbread man cookie</p>
-        <p class="item-price">$12.99</p>
-      </div>
-      <!-- Item 4 -->
-      <div class="item item-4">
-        <div class="img-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/6083/6083588.png?ga=GA1.1.107811200.1701925464&semt=ais"
-            alt="Snowflake decoration"
-          />
-          <div class="cart-message">
-            Add to cart
-            <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+        <!-- Item 4 -->
+        <div class="item item-4">
+          <div class="img-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/6083/6083588.png?ga=GA1.1.107811200.1701925464&semt=ais"
+              alt="Snowflake decoration"
+            />
+            <div class="cart-message">
+              Add to cart
+              <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+            </div>
           </div>
+          <p class="item-name">Snowflake decoration</p>
+          <p class="item-price">$4.99</p>
         </div>
-        <p class="item-name">Snowflake decoration</p>
-        <p class="item-price">$4.99</p>
-      </div>
-      <!-- Item 5 -->
-      <div class="item item-5">
-        <div class="img-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/2977/2977314.png?ga=GA1.1.107811200.1701925464&semt=ais"
-            alt="Star-shaped cookie"
-          />
-          <div class="cart-message">
-            Add to cart
-            <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+        <!-- Item 5 -->
+        <div class="item item-5">
+          <div class="img-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2977/2977314.png?ga=GA1.1.107811200.1701925464&semt=ais"
+              alt="Star-shaped cookie"
+            />
+            <div class="cart-message">
+              Add to cart
+              <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+            </div>
           </div>
+          <p class="item-name">Star-shaped cookie</p>
+          <p class="item-price">$12.99</p>
         </div>
-        <p class="item-name">Star-shaped cookie</p>
-        <p class="item-price">$12.99</p>
-      </div>
-      <!-- Item 6-->
-      <div class="item item-6">
-        <div class="img-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/6235/6235085.png?ga=GA1.1.107811200.1701925464&semt=ais"
-            alt="Santa's hat"
-          />
-          <div class="cart-message">
-            Add to cart
-            <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+        <!-- Item 6-->
+        <div class="item item-6">
+          <div class="img-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/6235/6235085.png?ga=GA1.1.107811200.1701925464&semt=ais"
+              alt="Santa's hat"
+            />
+            <div class="cart-message">
+              Add to cart
+              <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+            </div>
           </div>
+          <p class="item-name">Santa's hat</p>
+          <p class="item-price">$39.99 <span>$49.99</span></p>
         </div>
-        <p class="item-name">Santa's hat</p>
-        <p class="item-price">$39.99</p>
-      </div>
 
-      <!-- Item 7 -->
-      <div class="item item-7">
-        <div class="img-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/9028/9028306.png?ga=GA1.1.107811200.1701925464&semt=ais"
-            alt="Candy cane"
-          />
-          <div class="cart-message">
-            Add to cart
-            <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+        <!-- Item 7 -->
+        <div class="item item-7">
+          <div class="img-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/9028/9028306.png?ga=GA1.1.107811200.1701925464&semt=ais"
+              alt="Candy cane"
+            />
+            <div class="cart-message">
+              Add to cart
+              <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+            </div>
           </div>
+          <p class="item-name">Candy cane</p>
+          <p class="item-price">$8.99</p>
         </div>
-        <p class="item-name">Candy cane</p>
-        <p class="item-price">$8.99</p>
-      </div>
 
-      <!-- Item 8-->
-      <div class="item item-8">
-        <div class="img-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/1395/1395001.png?ga=GA1.1.107811200.1701925464&semt=ais"
-            alt="Snowman decoration"
-          />
-          <div class="cart-message">
-            Add to cart
-            <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+        <!-- Item 8-->
+        <div class="item item-8">
+          <div class="img-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/1395/1395001.png?ga=GA1.1.107811200.1701925464&semt=ais"
+              alt="Snowman decoration"
+            />
+            <div class="cart-message">
+              Add to cart
+              <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+            </div>
           </div>
+          <p class="item-name">Snowman decoration</p>
+          <p class="item-price">$39.99</p>
         </div>
-        <p class="item-name">Snowman decoration</p>
-        <p class="item-price">$39.99</p>
-      </div>
 
-      <!-- Item 9 -->
-      <div class="item item-9">
-        <div class="img-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/9115/9115091.png?ga=GA1.1.107811200.1701925464&semt=ais"
-            alt="Christmas ball"
-          />
-          <div class="cart-message">
-            Add to cart
-            <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+        <!-- Item 9 -->
+        <div class="item item-9">
+          <div class="img-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/9115/9115091.png?ga=GA1.1.107811200.1701925464&semt=ais"
+              alt="Christmas ball"
+            />
+            <div class="cart-message">
+              Add to cart
+              <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+            </div>
           </div>
+          <p class="item-name">Christmas ball</p>
+          <p class="item-price">$4.99</p>
         </div>
-        <p class="item-name">Christmas ball</p>
-        <p class="item-price">$4.99</p>
-      </div>
 
-      <!-- Item 10 -->
-      <div class="item item-10">
-        <div class="img-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/9082/9082103.png?ga=GA1.1.107811200.1701925464&semt=ais"
-            alt="Christmas red socks"
-          />
-          <div class="cart-message">
-            Add to cart
-            <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+        <!-- Item 10 -->
+        <div class="item item-10">
+          <div class="img-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/9082/9082103.png?ga=GA1.1.107811200.1701925464&semt=ais"
+              alt="Christmas red socks"
+            />
+            <div class="cart-message">
+              Add to cart
+              <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+            </div>
           </div>
+          <p class="item-name">Christmas red socks</p>
+          <p class="item-price">$29.99</p>
         </div>
-        <p class="item-name">Christmas red socks</p>
-        <p class="item-price">$29.99</p>
-      </div>
-      <!-- Item 11 -->
-      <div class="item item-11">
-        <div class="img-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/2913/2913186.png?ga=GA1.1.107811200.1701925464&semt=ais"
-            alt="Red ribbon"
-          />
-          <div class="cart-message">
-            Add to cart
-            <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+        <!-- Item 11 -->
+        <div class="item item-11">
+          <div class="img-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2913/2913186.png?ga=GA1.1.107811200.1701925464&semt=ais"
+              alt="Red ribbon"
+            />
+            <div class="cart-message">
+              Add to cart
+              <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+            </div>
           </div>
+          <p class="item-name">Red ribbon</p>
+          <p class="item-price">$3.99</p>
         </div>
-        <p class="item-name">Red ribbon</p>
-        <p class="item-price">$3.99</p>
-      </div>
 
-      <!-- Item 12 -->
-      <div class="item item-1">
-        <div class="img-box">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/9093/9093540.png?ga=GA1.1.107811200.1701925464&semt=ais"
-            alt="Christmas tree cookie"
-          />
-          <div class="cart-message">
-            Add to cart
-            <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+        <!-- Item 12 -->
+        <div class="item item-12">
+          <div class="img-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/9093/9093540.png?ga=GA1.1.107811200.1701925464&semt=ais"
+              alt="Christmas tree cookie"
+            />
+            <div class="cart-message">
+              Add to cart
+              <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+            </div>
           </div>
+          <p class="item-name">Christmas tree cookie</p>
+          <p class="item-price">$13.99</p>
         </div>
-        <p class="item-name">Christmas tree cookie</p>
-        <p class="item-price">$13.99</p>
       </div>
     </main>
   </body>
