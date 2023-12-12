@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --background: #1f2336;
+  --box-background: #313852;
+  --primary: #f4bd50;
+  --secondary: #f1f1f1;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: var(--box-background);
+  padding: 2.4rem;
+  padding-top: 1.2rem;
+  max-width: fit-content;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.input__wrapper {
+  position: relative;
+  padding: 1.5rem 0 0;
+  margin-bottom: 1rem;
+}
+
+.input__field {
+  outline: 1.5px solid var(--secondary);
+  padding: 8px;
+  padding-right: 3.2rem;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  color: var(--secondary);
+  border: none;
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.input__field::placeholder {
+  color: transparent;
+}
+
+.input__field:placeholder-shown ~ .input__label {
+  position: absolute;
+  top: 2.4rem;
+  cursor: text;
+  color: var(--secondary);
+}
+
+label,
+.input__field:focus ~ .input__label {
+  position: absolute;
+  top: 6px;
+  padding: 0 4px;
+  left: 8px;
+  background-color: var(--box-background);
+  color: var(--secondary);
+  display: block;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.input__field:focus ~ .input__label {
+  color: var(--primary);
+}
+
+.input__field:focus {
+  outline: 1.5px solid var(--primary);
+}
+
+.input__icon {
+  position: absolute;
+  bottom: -7.5px;
+  right: -7.5px;
+  width: 2.4rem;
+  height: 2.4rem;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  cursor: pointer;
+}
+
+/* .box {
+  background-color: var(--box-background);
+  padding: 2.4rem;
+  max-width: fit-content;
+  width: 100%;
+  padding-top: 1.2rem;
+  border-radius: 1.6rem;
+}
+
+.input__wrapper {
+  position: relative;
+  padding: 1.5rem 0 0;
+}
+
+.input__field {
+  outline: 1.5px solid var(--secondary);
+  font-size: 1.6rem;
+  border-radius: 8px;
+  color: var(--secondary);
+  padding: 8px;
+  border: none;
+  padding-right: 3.2rem;
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.input__field::placeholder {
+  color: transparent;
+}
+
+.input__field:placeholder-shown ~ .input__label {
+  font-size: 1.5rem;
+  cursor: text;
+  color: var(--secondary);
+  top: 2.2rem;
+}
+
+label,
+.input__field:focus ~ .input__label {
+  position: absolute;
+  top: 6px;
+  padding: 0 4px;
+  background-color: var(--box-background);
+  display: block;
+  font-size: 1.4rem;
+  left: 8px;
+  color: var(--secondary);
+  transition: 0.3s;
+}
+
+.input__field:focus ~ .input__label {
+  color: var(--primary);
+}
+
+.input__field:focus {
+  outline: 1.5px solid var(--primary);
+}
+
+.input__icon {
+  position: absolute;
+  right: -7.5px;
+  bottom: -7.5px;
+  width: 2.4rem;
+  height: 2.4rem;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  cursor: pointer;
+} */

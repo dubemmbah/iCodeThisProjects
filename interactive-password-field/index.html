@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Interactive Password Field</title>
+  </head>
+  <body>
+    <form class="box">
+      <div class="input__wrapper">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email"
+          class="input__field"
+          required
+        />
+        <label for="email" class="input__label">Email</label>
+      </div>
+      <div class="input__wrapper">
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Your password"
+          title="Minimum of 6 characters and at least 1 Alphabet and 1 Number"
+          pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+          class="input__field"
+          required
+        />
+        <label for="password" class="input__label">Password</label>
+        <img class="input__icon" src="./img/eye.svg" alt="Eye icon" />
+      </div>
+    </form>
+  </body>
+</html>
