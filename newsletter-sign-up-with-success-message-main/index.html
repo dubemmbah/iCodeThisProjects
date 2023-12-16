@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="form">
+        <h1 class="heading">Stay updated!</h1>
+        <p class="info">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="updates_list">
+          <li class="update">Product discovery and building what matters</li>
+          <li class="update">Measuring to ensure updates are a success</li>
+          <li class="update">And much more!</li>
+        </ul>
+        <form action="#">
+          <div class="input__wrapper">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+            />
+          </div>
+          <button class="btn-subscribe" disabled>
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </section>
+      <section class="background"></section>
+    </main>
+    <!-- Sign-up form start -->
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <div class="success-message">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="40"
+        height="40"
+        viewBox="0 0 64 64"
+        class="icon-success"
+      >
+        <defs>
+          <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FF6A3A" />
+            <stop offset="100%" stop-color="#FF527B" />
+          </linearGradient>
+        </defs>
+        <g fill="none">
+          <circle cx="32" cy="32" r="32" fill="url(#a)" />
+          <path
+            stroke="#FFF"
+            stroke-width="4"
+            d="m18.286 34.686 8.334 7.98 19.094-18.285"
+          />
+        </g>
+      </svg>
+      <h1 class="title">Thanks for subscribing!</h1>
+      <p class="info">
+        A confirmation email has been sent to ash@loremcompany.com. Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+      <button class="btn-dismiss">Dismiss message</button>
+    </div>
+
+    <!-- Success message end -->
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Chukwudubem Mbah</a>.
+    </div> -->
+  </body>
+</html>

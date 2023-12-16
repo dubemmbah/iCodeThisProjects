@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: white;
+  color: #0f172a;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  width: 80rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: 900;
+  /* text-wrap: nowrap; */
+  margin-bottom: 2rem;
+}
+
+.info {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.updates_list {
+  list-style: url(./assets/images/icon-list.svg) inside;
+  margin-bottom: 2rem;
+}
+
+.update {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+form {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.input__wrapper {
+}
+
+.input__wrapper label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input__wrapper input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #c5c5c5;
+}
+
+.input__wrapper input:focus,
+.input__wrapper input:active {
+  outline: none;
+}
+
+.input__wrapper input.error {
+  border: 1px solid #ef4444;
+  background: #fecaca;
+}
+
+.input__wrapper input::placeholder {
+  font-size: 1.1rem;
+  color: #a5a5a5;
+}
+
+.btn-subscribe {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  background: #0f172a;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn-subscribe:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+/* 
+.btn-subscribe:hover {
+  background: white;
+  color: #0f172a;
+  border: 1px solid #0f172a;
+} */
+
+.form {
+  padding: 5rem 2.5rem;
+}
+
+.background {
+  background: url(./assets/images/illustration-sign-up-desktop.svg) no-repeat
+    center/cover;
+  border-radius: 1.5rem;
+}
+
+/* SUCCESS MESSAGE */
+.success-message {
+  display: none;
+  width: 32rem;
+  background: white;
+  color: #0f172a;
+  padding: 4rem;
+  border-radius: 1.5rem;
+}
+
+.icon-success {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.success-message .title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.success-message .info {
+  line-height: 1.5;
+  font-size: 1.15rem;
+}
+
+.btn-dismiss {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #0f172a;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
