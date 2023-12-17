@@ -16,7 +16,7 @@
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
-
+    <!-- 
     <style>
       .attribution {
         font-size: 11px;
@@ -25,7 +25,7 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <main>
@@ -41,11 +41,15 @@
         </ul>
         <form action="#">
           <div class="input__wrapper">
-            <label for="email">Email address</label>
+            <label for="email">
+              <p class="main">Email address</p>
+              <p class="error-msg">Valid email required</p>
+            </label>
             <input
               type="email"
               name="email"
               id="email"
+              title="Enter your email address in the format email@company.com"
               placeholder="email@company.com"
             />
           </div>

@@ -18,6 +18,7 @@ const btnSubscribe = document.querySelector(".btn-subscribe");
 const successMessage = document.querySelector(".success-message");
 const successMessageInfo = document.querySelector(".success-message p");
 const btnDismiss = document.querySelector(".btn-dismiss");
+const errorMsg = document.querySelector(".input__wrapper label .error-msg");
 
 // Function to validate email format
 const isValidEmail = function (email) {
@@ -27,13 +28,19 @@ const isValidEmail = function (email) {
 };
 
 const handleInputValidation = function () {
-  const emailValue = emailInput.value.trim();
+  const emailValue = emailInput.value;
 
   if (isValidEmail(emailValue)) {
     emailInput.classList.remove("error");
+    emailInput.classList.add("success");
     btnSubscribe.disabled = false;
+    errorMsg.style.display = "none";
+    successMessageInfo.innerHTML = `A confirmation email has been sent to <a class='email'>${emailValue}</a>. Please open
+    it and click the button inside to confirm your subscription.`;
   } else {
+    emailInput.classList.remove("success");
     emailInput.classList.add("error");
+    errorMsg.style.display = "block";
     btnSubscribe.disabled = true;
   }
 };
@@ -47,6 +54,7 @@ const dismissSuccessMessage = function () {
   container.style.display = "grid";
   successMessage.style.display = "none";
   emailInput.value = ""; // clearing the input field
+  emailInput.classList.remove("success");
   btnSubscribe.disabled = true;
 };
 
@@ -64,10 +72,7 @@ form.addEventListener("submit", (e) => {
 
 btnDismiss.addEventListener("click", dismissSuccessMessage);
 
-successMessageInfo.innerHTML = `A confirmation email has been sent to ${emailInput.value}. Please open
-it and click the button inside to confirm your subscription.`;
-
-console.log(emailInput.value);
+// console.log(emailInput.value);
 // const container = document.querySelector("main");
 // const emailInput = document.getElementById("email");
 // const form = document.querySelector("form");
