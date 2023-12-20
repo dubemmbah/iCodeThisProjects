@@ -67,7 +67,6 @@ main {
   top: 50%;
   left: 0;
   transform: translateY(-40%);
-  /* vertical-align: middle; */
 }
 
 form {
@@ -206,4 +205,82 @@ form {
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+@media (max-width: 53.125em) {
+  main {
+    width: 62.5rem;
+  }
+
+  .heading {
+    font-size: 3.2rem;
+  }
+
+  .update {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 43.75em) {
+  main {
+    background: white;
+    color: #0f172a;
+    display: grid;
+    grid-template-rows: 0.75fr 1fr;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0rem;
+    border-radius: 1.5rem;
+  }
+
+  /* .form {
+    padding: 5rem 2.5rem;
+  } */
+
+  .heading {
+    font-size: 4rem;
+  }
+
+  .info {
+    font-size: 1.6rem;
+  }
+
+  .updates_list {
+    margin-bottom: 3rem;
+  }
+
+  .update {
+    font-size: 1.4rem;
+    line-height: 1.75;
+  }
+
+  .input__wrapper label {
+    font-size: 1.3rem;
+    letter-spacing: -0.25px;
+    font-weight: bolder;
+  }
+
+  .input__wrapper input {
+    padding: 1.5rem;
+    text-indent: 0.5rem;
+  }
+
+  .input__wrapper input::placeholder {
+    font-size: 1.5rem;
+  }
+
+  .btn-subscribe {
+    padding: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .background {
+    width: 100%;
+    grid-row: 1;
+    background: url(./assets/images/illustration-sign-up-mobile.svg) no-repeat
+      center/cover;
+    border-radius: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
 }
