@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js" defer></script>
+    <title>iCodeMas - 19</title>
+  </head>
+  <body>
+    <main class="card">
+      <!-- Close button -->
+      <button class="btn-close">
+        <ion-icon class="icon-close" name="close-outline"></ion-icon>
+      </button>
+
+      <form action="#">
+        <!-- Contact Info -->
+        <section class="contact_info">
+          <h3 class="section_heading">Contact info</h3>
+          <div class="input__wrapper">
+            <label for="email">
+              <p>Email <span>*</span></p>
+              <p class="error-message">Valid input required</p>
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="yourname@mail.com"
+              required
+            />
+          </div>
+        </section>
+
+        <!-- Shipping info -->
+        <section class="shipping_info">
+          <h3 class="section_heading">Shipping info</h3>
+          <div class="input__wrapper">
+            <label for="name"
+              ><p>Name <span>*</span></p>
+              <p class="error-message">Valid input required</p>
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter name"
+              required
+            />
+          </div>
+          <div class="input__wrapper">
+            <label for="region"
+              ><p>Country / Region <span>*</span></p>
+              <p class="error-message">Valid input required</p>
+            </label>
+            <input
+              type="text"
+              name="region"
+              id="region"
+              placeholder="Enter country"
+              required
+            />
+          </div>
+          <div class="input__wrapper">
+            <label for="address"
+              ><p>Address <span>*</span></p>
+              <p class="error-message">Valid input required</p>
+            </label>
+            <input
+              type="text"
+              name="region"
+              id="region"
+              placeholder="Enter address"
+              required
+            />
+          </div>
+        </section>
+
+        <!-- Payment info -->
+        <section class="payment_info">
+          <h3 class="section_heading">Payment info</h3>
+          <div class="payment_option">
+            <button class="pay-mode pay-mode-card">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/13213/13213293.png?ga=GA1.1.107811200.1701925464&semt=ais"
+                alt="Card illustration"
+              />
+              Card
+            </button>
+            <button class="pay-mode pay-mode-card">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/2626/2626565.png?ga=GA1.1.107811200.1701925464&semt=ais"
+                alt="Cash illustration"
+              />
+              Cash at arrival
+            </button>
+            <button class="pay-mode pay-mode-card">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/2564/2564713.png?ga=GA1.1.107811200.1701925464&semt=ais"
+                alt="Paypal illustration"
+              />
+              Paypal
+            </button>
+          </div>
+          <div class="input__wrapper">
+            <label for="card-number"
+              ><p>Card number <span>*</span></p>
+              <p class="error-message">Valid input required</p></label
+            >
+            <input
+              type="text"
+              name="card-number"
+              id="card-number"
+              pattern="\d*"
+              placeholder="0004 1298 7782 0198"
+              maxlength="19"
+              required
+            />
+          </div>
+          <div class="sensitive">
+            <!-- Expiry -->
+            <div class="input__wrapper">
+              <label for="expiry"
+                ><p>Expiry <span>*</span></p>
+                <p class="error-message">Valid input required</p>
+              </label>
+              <input
+                name="expiry"
+                id="expiry"
+                type="text"
+                pattern="\d*"
+                placeholder="MM / YY"
+                maxlength="5"
+                required
+              />
+            </div>
+            <!-- CVV -->
+            <div class="input__wrapper">
+              <label for="cvv"
+                ><p>CVV <span>*</span></p>
+                <p class="error-message">Valid input required</p></label
+              >
+              <input
+                name="cvv"
+                id="cvv"
+                type="text"
+                placeholder="123"
+                maxlength="3"
+                required
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- PLace order button -->
+        <button type="submit" class="btn-order">Place order</button>
+      </form>
+    </main>
+
+    <!-- Thank you card -->
+    <div class="card-thankyou hide">
+      <button class="btn-close">
+        <ion-icon class="icon-close" name="close-outline"></ion-icon>
+      </button>
+    </div>
+  </body>
+</html>
