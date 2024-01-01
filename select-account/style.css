@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --background: #e2e8f0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: white;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  max-width: 65rem;
+  width: 100%;
+  padding: 8rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.info {
+  font-size: 1.3rem;
+  font-weight: 500;
+  max-width: 35rem;
+  margin: auto;
+}
+
+.accounts {
+  margin-top: 4rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.account {
+  width: 14rem;
+  padding: 1rem;
+  background: var(--background);
+  border-radius: 1rem;
+}
+
+.account-details {
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.account-details p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.btn-option {
+  border: none;
+  background: none;
+  position: relative;
+}
+
+.option {
+  margin-top: 1rem;
+  padding: 0.25rem;
+  border-radius: 1rem;
+  background: var(--background);
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.actions {
+  display: none;
+  position: absolute;
+  top: 92.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  background-color: #fcfcfc;
+  box-shadow: 0 3rem 5rem var(--background);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease;
+}
+
+.actions button {
+  margin-bottom: 0.25rem;
+  border: none;
+  background: none;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.actions button:hover {
+  background: var(--background);
+}
+
+.actions button > .icon-action {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.unhide {
+  display: block;
+}
+
+/* ADD BUTTON */
+.account-add {
+  background: transparent;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.btn-add {
+  border: none;
+  background: var(--background);
+  padding: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon-add {
+  background: white;
+  color: var(--background);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
