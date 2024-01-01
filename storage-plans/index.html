@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js" defer></script>
+    <title>Storage Plans</title>
+  </head>
+  <body>
+    <main>
+      <!-- Representation -->
+      <div class="total">
+        <div class="header">
+          <button class="btn-prev">&larr;</button>
+          <h4 class="title">Total storage</h4>
+        </div>
+        <div class="representation">
+          <div class="chart"></div>
+          <div class="data">
+            <h5 class="total-unused">
+              30 GB <br />
+              <span>Total storage</span>
+            </h5>
+            <h5 class="total-used">
+              3.6 GB <br />
+              <span>12% used</span>
+            </h5>
+            <button class="btn-view">View details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plans -->
+      <div class="plans">
+        Plans
+        <div class="plan current-plan">
+          <div class="illustration"></div>
+          <h5>30 GB</h5>
+          <p>Current plan</p>
+        </div>
+
+        <div class="plan plan-1">
+          <div class="plan-size">
+            <div class="illustration"></div>
+            <h5>100 GB</h5>
+          </div>
+          <div class="plan-price">
+            <button class="btn-price">NOK 17.00/month</button>
+            <p>Or prepay annually NOK 170.00/year</p>
+          </div>
+        </div>
+
+        <div class="plan plan-2">
+          <div class="plan-size">
+            <div class="illustration"></div>
+            <h5>1TB</h5>
+          </div>
+          <div class="plan-price">
+            <button>NOK 89.00/month</button>
+            <p>Or prepay annually NOK 899.00/year</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

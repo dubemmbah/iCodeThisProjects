@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap);
+
+:root {
+  /* --bdy-bg: #3f3f46; */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ccc;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  /* padding: 6rem; */
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7.5rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.total {
+  background: #e9ecef;
+  max-width: 40rem;
+  width: 100%;
+  height: max-content;
+  padding: 4rem;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.total::before {
+  content: "";
+  background: #dddddd25;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  width: 90%;
+  height: 100%;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  z-index: -1;
+}
+
+.total .header {
+  margin-bottom: 4rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.total .header .btn-prev {
+  border: none;
+  background: white;
+  border-radius: 1rem;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.total .header > h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.total .representation {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.total .representation .chart {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background: conic-gradient(#364fc7 0%, #364fc7 12%, #a5d8ffc1 0%);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.1);
+  outline: 1px solid #f3f3f3;
+  outline-offset: 0.75rem;
+}
+
+.total .representation .data {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.total-used {
+  color: #364fc7;
+}
+
+.data h5 {
+  font-size: 1.6rem;
+}
+
+.data h5 > span {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.btn-view {
+  border: 1px solid transparent;
+  background: #000;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.btn-view:hover {
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+/* PLANS */
+.plans {
+  max-width: 35rem;
+  width: 100%;
+  background: #ddd;
+  border-radius: 2rem;
+  border: 1px solid white;
+  padding: 2.5rem;
+  font-size: 1.75rem;
+  position: relative;
+  display: flex;
+  gap: 1.25rem;
+  flex-direction: column;
+}
+
+.plan {
+  background: #000;
+  margin-left: -15%;
+  width: 130%;
+  height: 16rem;
+  border-radius: 2rem;
+  color: white;
+  padding: 4rem;
+}
+
+.current-plan .illustration,
+.plan-size .illustration {
+  width: 2rem;
+  height: 0.5rem;
+  background: #f59f00e2;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.current-plan h5,
+.plan-size h5 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.current-plan p {
+  font-size: 1.6rem;
+}
+
+.plan-1,
+.plan-2 {
+  background: #e9ecef;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.plan-1 .illustration {
+  background: #228be6;
+}
+
+.plan-2 .illustration {
+  background: #12b886;
+}
+
+.plan-price {
+  text-align: right;
+}
+
+.plan-price button {
+  background: #000;
+  font-size: 1.3rem;
+  color: white;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.4s ease;
+}
+
+.plan-price button:hover {
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.plan-price p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #364fc7;
+}
+
+@media (max-width: 56.25em) {
+  body {
+    padding: 5rem 0;
+  }
+  main {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+  }
+}
+
+@media (max-width: 28em) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    padding: 7.5rem 1.5rem;
+  }
+}
