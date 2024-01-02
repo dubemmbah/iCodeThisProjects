@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --background: #f8fafc;
+  --card-background: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  max-width: 55rem;
+  width: 100%;
+  background: var(--card-background);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.05);
+  padding: 4rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.info {
+  font-size: 1.3rem;
+}
+
+.testimonials {
+  max-width: 50rem;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* overflow: hidden; */
+  /* width: 400%; */
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  /* box-sizing: border-box; */
+}
+
+.testimonial {
+  margin: 4rem 0 2rem;
+  position: relative;
+}
+
+.testimonial-text {
+  background: #020617;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.05);
+  color: white;
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  font-size: 1.15rem;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-text::before {
+  content: "";
+  position: absolute;
+  top: 57.5%;
+  left: 47.5%;
+  transform: rotate(45deg) translateX(-50%);
+  width: 5rem;
+  height: 5rem;
+  background: #020617;
+  z-index: -1;
+}
+
+.btn {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  border: 1px solid #0206172a;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-prev {
+  left: 5%;
+}
+
+.btn-next {
+  right: 5%;
+}
+
+.icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.testifier .image-box {
+  width: 6rem;
+  height: 6rem;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.testifier img {
+  width: 150%;
+  height: 150%;
+  object-fit: cover;
+  transform: translateY(1.75rem);
+  scale: 1.1;
+}
+
+.testifier-name {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.testifier-job {
+  font-size: 1.1rem;
+  opacity: 0.5;
+}
