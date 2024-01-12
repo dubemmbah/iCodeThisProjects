@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --background: linear-gradient(180deg, #f6f3f0 0% 55%, #fdba74 55%, #f43f5e);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  padding: 12rem;
+  display: grid;
+  /* place-items: center; */
+}
+
+main {
+  max-width: 90rem;
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  position: relative;
+  width: 35rem;
+  z-index: 1;
+}
+
+.header::before {
+  content: "2/3";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15rem;
+  /* z-index: -1; */
+  color: #555;
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+}
+
+.info {
+  font-weight: 100;
+  max-width: 33rem;
+  line-height: 1.25;
+}
+
+.categories {
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.category {
+  background: white;
+  width: 27.5rem;
+  height: 30rem;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category.active {
+  border: 2px solid #ec5871;
+}
+
+.category .img-box {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0px 3px 8px rgba(0, 0, 0, 0.025);
+}
+
+.category .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.category button {
+  background: transparent;
+  border: 1px solid #ddd;
+  display: inline-block;
+  margin-top: auto;
+  padding: 1rem;
+  max-width: 14rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+  color: #bbb;
+  cursor: pointer;
+}
+
+.category.active button {
+  background: #6683f3;
+  color: #fff;
+}
+
+.btn-continue {
+  background: transparent;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-left: auto;
+  color: #eee;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.btn-continue * {
+  padding: 1.5rem 2rem;
+}
+
+.btn-continue p {
+  border-right: 1px solid;
+}
+
+.btn-continue .icon-arrow {
+  width: 2.4rem;
+  height: 2.4rem;
+}
