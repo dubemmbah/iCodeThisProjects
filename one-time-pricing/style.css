@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --background: #dee5ec;
+  --card-shadow: 0 -4rem 0.2rem 4rem #cfd5e6b9;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #0c1221;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  color: inherit;
+  box-shadow: var(--card-shadow);
+  max-width: 35rem;
+  width: 100%;
+  padding: 4rem;
+  border-radius: 1.5rem;
+}
+
+.price {
+  margin-bottom: 0.5rem;
+  font-size: 2.6rem;
+}
+
+.info {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.btn-buy {
+  background: linear-gradient(to right, #46db7f, #46e0d3);
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: inherit;
+  transition: 0.4s ease;
+}
+
+.quantity {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.quantity span {
+  font-weight: 600;
+}
+
+.feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.feature {
+  position: relative;
+  font-size: 1.3rem;
+  margin-left: 3rem;
+}
+
+.feature::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #cfd5e689;
+  border-radius: 50%;
+  top: 50%;
+  left: -12.5%;
+  transform: translateY(-50%);
+  margin-right: 6rem;
+  background-image: url('data:image/svg+xml, %3Csvg width="1000px" height="1000px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9 12L10.5 13.5V13.5C10.7761 13.7761 11.2239 13.7761 11.5 13.5V13.5L15 10" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>%');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.feature a {
+  color: currentColor;
+}
+
+.location-check {
+  background: #d5dae7b9;
+  border-radius: 0.7rem;
+  padding: 1rem;
+}
+
+.location-check p {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.input-wrapper {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+}
+
+.input-wrapper input {
+  display: inline-block;
+  max-width: 16rem;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"%3E%3Cpath stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"%3E%3C/path%3E%3C/svg%3E')
+    no-repeat 1rem center;
+  background-size: 2.4rem;
+  border: 1px solid #aaa;
+  position: relative;
+  padding-left: 4rem;
+  font-size: 1.5rem;
+}
+
+.input-wrapper input:focus,
+.input-wrapper input:active {
+  outline: none;
+}
+
+.input-wrapper input::placeholder {
+  color: inherit;
+  font-size: 1.3rem;
+}
+
+.input-wrapper input:-ms-input-placeholder {
+  color: inherit;
+}
+
+.input-wrapper button {
+  border: none;
+  border-radius: 0.75rem;
+  background: #f9f9f9;
+  color: inherit;
+  cursor: pointer;
+  transition: 0.25s ease;
+  padding: 1rem;
+}
+
+.input-wrapper button:hover {
+  background: #fff;
+}
+
+.btn-pick {
+  background: linear-gradient(to right, #6c96e6, #b7aaed);
+  margin-top: 3rem;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: inherit;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+
+.btn-pick:hover,
+.btn-buy:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 23.5em) {
+  html {
+    font-size: 50%;
+  }
+}
