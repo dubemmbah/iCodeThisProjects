@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;400;600;700&display=swap);
+
+:root {
+  --primary: #9333ea;
+  --primary-hover: #7e22ce;
+  --important: #f55e5e;
+  --header-height: 6rem;
+  --bg-white: #f8f8ff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-white);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+}
+
+header {
+  position: fixed;
+  height: var(--header-height);
+  background-color: var(--primary);
+  width: 100%;
+  padding: 0 3rem;
+  display: flex;
+  user-select: none;
+  align-items: center;
+  justify-content: end;
+}
+
+.navigation-group {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.icon-wrapper {
+  position: relative;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: none;
+  width: 5.2rem;
+  height: 5.2rem;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-wrapper button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-wrapper svg {
+  width: 3rem;
+  height: 3rem;
+  stroke: var(--bg-white);
+}
+
+.icon-wrapper:hover,
+.icon-wrapper:focus {
+  background-color: var(--primary-hover);
+}
+
+.profile {
+  margin-left: 0.5rem;
+  background-color: transparent;
+  border: none;
+}
+
+.profile img {
+  display: block;
+  width: 4.2rem;
+  height: 4.2rem;
+  object-fit: cover;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #f7f7f7;
+  transition: all 0.2s ease-in-out;
+}
+
+.profile img:hover {
+  transform: scale(1.05);
+}
+
+.notification-mark {
+  position: absolute;
+  display: block;
+  top: 0.8rem;
+  right: 1.2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: var(--important);
+}
+
+.notifications-top {
+  padding: 1rem;
+}
+
+.notification-item {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  min-height: 6rem;
+  background-color: #fafbff;
+  border-top: 1px solid #f1f3f6;
+  transition: all 0.2s ease-in-out;
+}
+
+.notification-item:hover {
+  background-color: #e5eeff;
+}
+
+.notification-item .avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  object-fit: cover;
+}
+
+.notification-item .avatar-wrapper {
+  position: relative;
+}
+
+.notification-item .time {
+  color: #7d8491;
+  font-size: 1.3rem;
+}
+
+.dropdown--wrapper {
+  max-width: 35.2rem;
+  width: 100%;
+  top: 65px;
+  right: 9.5rem;
+  margin: 0px auto;
+  position: absolute;
+  background: var(--bg-white);
+  border-radius: 0.5rem;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  animation: fadeInAnimation ease-in-out 0.5s forwards;
+}
+
+.dropdown--wrapper h2 {
+  margin: 0px;
+  font-size: 2rem;
+  color: #192028;
+}
+
+.dropdown--wrapper--fade-in {
+  animation: fadeInAnimation ease-in-out 0.5s forwards;
+}
+
+.none {
+  display: none;
+}
+
+.hide {
+  animation: fadeOutAnimation 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    max-height: 0rem;
+  }
+
+  100% {
+    max-height: 40rem;
+    overflow-y: scroll;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+    max-height: 40rem;
+    overflow-y: scroll;
+  }
+
+  100% {
+    max-height: 0rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsla(271, 56%, 48%, 0.25);
+  border-radius: 15px;
+}

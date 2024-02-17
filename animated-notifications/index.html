@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Animated Notifications</title>
+  </head>
+  <body>
+    <header>
+      <div class="navigation-group">
+        <button class="icon-wrapper">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+            />
+          </svg>
+        </button>
+        <div class="icon-wrapper notifications">
+          <button type="button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5"
+              />
+            </svg>
+          </button>
+          <div class="notification-mark notification-mark--pulsing"></div>
+        </div>
+        <button class="profile" type="button">
+          <img
+            src="https://img.freepik.com/premium-photo/portrait-african-american-man-smiling-dark-blue_93675-31505.jpg?size=626&ext=jpg&ga=GA1.1.35782183.1708112768&semt=ais"
+            alt="Profile picture"
+          />
+        </button>
+      </div>
+
+      <div class="dropdown--wrapper hide none">
+        <div class="notifications-top">
+          <h2>Notifications</h2>
+        </div>
+        <div class="notification-items">
+          <div class="notification-item notification-item--recent">
+            <div class="avatar-wrapper">
+              <img
+                class="avatar"
+                src="https://img.freepik.com/premium-photo/highly-detailed-closeup-portrait-attractive-young-african-man-wearing-black-jacket-looking-camera-with-serious-thoughtful-expression-dark-background-human-emotions-feelings_248459-1125.jpg?size=626&ext=jpg&ga=GA1.1.35782183.1708112768&semt=ais"
+                alt="Dubem Mbah"
+              />
+            </div>
+            <div class="notification-item--body">
+              <div>
+                <strong>Chukwudubem Mbah</strong> completed
+                <strong>Issue 131</strong>
+              </div>
+              <span class="time"> 6 min ago </span>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="notification-item notification-item--recent">
+            <div class="avatar-wrapper">
+              <img
+                class="avatar"
+                src="https://img.freepik.com/premium-photo/highly-detailed-closeup-portrait-attractive-young-african-man-wearing-black-jacket-looking-camera-with-serious-thoughtful-expression-dark-background-human-emotions-feelings_248459-1125.jpg?size=626&ext=jpg&ga=GA1.1.35782183.1708112768&semt=ais"
+                alt="Isaac Jones"
+              />
+            </div>
+            <div class="notification-item--body">
+              <div>
+                <strong>Isaac Jones</strong> completed
+                <strong>Issue 09</strong>
+              </div>
+              <span class="time"> 27 min ago </span>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="notification-item notification-item--recent">
+            <div class="avatar-wrapper">
+              <img
+                class="avatar"
+                src="https://img.freepik.com/free-photo/handsome-adult-male-posing_23-2148729713.jpg?size=626&ext=jpg&ga=GA1.1.35782183.1708112768&semt=ais"
+                alt="Donald Trump"
+              />
+            </div>
+            <div class="notification-item--body">
+              <div>
+                <strong>Donald Trump</strong> completed
+                <strong>Issue 34</strong>
+              </div>
+              <span class="time"> 56 min ago </span>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="notification-item notification-item--recent">
+            <div class="avatar-wrapper">
+              <img
+                class="avatar"
+                src="https://img.freepik.com/free-photo/portrait-man-sitting_23-2148854428.jpg?size=626&ext=jpg&ga=GA1.1.35782183.1708112768&semt=ais"
+                alt="Barrack Obama"
+              />
+            </div>
+            <div class="notification-item--body">
+              <div>
+                <strong>Barrack Obama</strong> completed
+                <strong>Issue 1</strong>
+              </div>
+              <span class="time"> 59 min ago </span>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="notification-item notification-item--recent">
+            <div class="avatar-wrapper">
+              <img
+                class="avatar"
+                src="https://img.freepik.com/free-photo/portrait-man-sitting_23-2148854428.jpg?size=626&ext=jpg&ga=GA1.1.35782183.1708112768&semt=ais"
+                alt="Ibrahim Shekau"
+              />
+            </div>
+            <div class="notification-item--body">
+              <div>
+                <strong>Ibrahim Shekau</strong> completed
+                <strong>Issue 28</strong>
+              </div>
+              <span class="time"> 2 hours ago </span>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="notification-item notification-item--recent">
+            <div class="avatar-wrapper">
+              <img
+                class="avatar"
+                src="https://img.freepik.com/free-photo/portrait-man-sitting_23-2148854428.jpg?size=626&ext=jpg&ga=GA1.1.35782183.1708112768&semt=ais"
+                alt="Stephen Hawkings"
+              />
+            </div>
+            <div class="notification-item--body">
+              <div>
+                <strong>Stephen Hawkings</strong> completed
+                <strong>Issue 3</strong>
+              </div>
+              <span class="time"> 5 hours ago </span>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="notification-item notification-item--recent">
+            <div class="avatar-wrapper">
+              <img
+                class="avatar"
+                src="https://img.freepik.com/free-photo/portrait-man-sitting_23-2148854428.jpg?size=626&ext=jpg&ga=GA1.1.35782183.1708112768&semt=ais"
+                alt="Kim Kardashian"
+              />
+            </div>
+            <div class="notification-item--body">
+              <div>
+                <strong>Kim Kardashian</strong> completed
+                <strong>Issue 67</strong>
+              </div>
+              <span class="time"> 10 hours ago </span>
+              <div class="border"></div>
+            </div>
+          </div>
+
+          <div class="notification-item notification-item--recent">
+            <div class="avatar-wrapper">
+              <img
+                class="avatar"
+                src="https://img.freepik.com/free-photo/portrait-man-sitting_23-2148854428.jpg?size=626&ext=jpg&ga=GA1.1.35782183.1708112768&semt=ais"
+                alt="Brahim Diaz"
+              />
+            </div>
+            <div class="notification-item--body">
+              <div>
+                <strong>Brahim Diaz </strong> completed
+                <strong>Issue 99</strong>
+              </div>
+              <span class="time"> 17 hours ago </span>
+              <div class="border"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
